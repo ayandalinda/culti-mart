@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 // Note: These imports will fail until the files are created, which is normal during setup.
 import Home from './pages/Home'
+import About from './pages/About'
+import Impact from './pages/Impact'
 import Marketplace from './pages/Marketplace'
 import ProductDetails from './pages/ProductDetails'
 import Login from './pages/Login'
@@ -24,6 +26,8 @@ function App() {
             <Routes>
               {/* Public Routes */}
               <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/impact" element={<Impact />} />
               <Route path="/marketplace" element={<Marketplace />} />
               <Route path="/product/:id" element={<ProductDetails />} />
               <Route path="/login" element={<Login />} />
